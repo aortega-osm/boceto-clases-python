@@ -19,9 +19,8 @@ class Orden:
     def __str__(self):
        producto_str=""
        for producto in self._producto:
-           producto_str += producto.__str__() + "|"
+           producto_str = producto.__str__() + producto.__str__() +"|"
 
        return f"Orden:{self._Id_orden}, Producto:{producto_str}"
 
-if __name__: "__main__"
 
